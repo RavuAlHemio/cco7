@@ -1,0 +1,7 @@
+# TypeScript build output
+*.js
+*.js.map
+
+# IDEs
+.vscode/
+.vs/

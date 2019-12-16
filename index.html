@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cisco Type-7 Password Encoder/Decoder</title>
+    <script type="text/javascript" src="cco7.js"></script>
+</head>
+<body>
+    <h1>Cisco Type-7 Password Encoder/Decoder</h1>
+    <p>
+        This page converts between Cisco’s <em>type 7</em> encoded passwords and their plaintext equivalents.
+    </p>
+    <p>
+        The code is implemented in TypeScript/JavaScript; the passwords are not sent to the server.
+    </p>
+    <p>
+        <label for="input-type7">Type 7 password:</label>
+        <input type="text" id="input-type7" />
+        <input type="button" id="button-t72p" value="Type 7 to plain →" />
+        <input type="button" id="button-p2t7" value="← plain to Type 7" />
+        <label for="input-plain">Plaintext password:</label>
+        <input type="text" id="input-plain" />
+    </p>
+    <p>
+        <label for="input-seed">Seed for ← encoding:</label>
+        <input type="number" id="input-seed" min="0" max="52" step="1" />
+    </p>
+    <script type="text/javascript">
+        CCO7.initialize();
+    </script>
+</body>
+</html>
